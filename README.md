@@ -1,13 +1,29 @@
-install the dependencies on requirements.txt, We used Python 3.11.9
+Distracted Driver Detection
 
+Using Vite with FastAPI
+
+run
+
+```bash
+git clone https://github.com/USERNAME/distracted-driver-detection.git
+cd distracted-driver-detection
+```
+
+backend
+
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate   # windows
+source venv/bin/activate  # mac/linux
 pip install -r requirements.txt
+uvicorn app:app --reload
+```
 
-get the driver_distraction_pipeline.joblib file from here:
+frontend
 
-https://drive.google.com/drive/folders/1-AdK1W07PIDxH4liXC9Pna6dHc1BzioR?usp=sharing
-
-put it alongside app.py
-
-then run
-
-streamlit run app.py
+```bash
+cd frontend
+npm install
+npm run dev
+```

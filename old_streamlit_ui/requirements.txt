@@ -1,0 +1,7 @@
+streamlit
+opencv-python-headless
+numpy<2.0
+scikit-learn==1.2.2
+scikit-image
+joblib
+pandas

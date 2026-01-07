@@ -1,7 +1,9 @@
-streamlit
-opencv-python-headless
-numpy<2.0
+fastapi==0.110.0
+uvicorn==0.27.1
+python-multipart==0.0.9
+
+numpy==1.24.4
+opencv-python==4.8.1.78
+scikit-image==0.21.0
 scikit-learn==1.2.2
-scikit-image
-joblib
-pandas
+joblib==1.3.2
