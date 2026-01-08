@@ -20,7 +20,7 @@ app.add_middleware(
 # =====================
 # Load model bundle
 # =====================
-bundle = joblib.load("model.joblib")
+bundle = joblib.load("driver_distraction_pipeline.joblib")
 
 model = bundle["model"]
 scaler = bundle["scaler"]

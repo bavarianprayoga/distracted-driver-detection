@@ -2,6 +2,12 @@ Distracted Driver Detection
 
 Using Vite with FastAPI
 
+get the driver_distraction_pipeline.joblib file from here:
+
+https://drive.google.com/drive/folders/1-AdK1W07PIDxH4liXC9Pna6dHc1BzioR?usp=sharing
+
+put it inside ```backend``` folder
+
 run
 
 ```bash
