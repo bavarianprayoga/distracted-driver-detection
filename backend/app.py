@@ -80,7 +80,9 @@ def extract_features(img_bytes):
 # =====================
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
-    if not file.content_type.startswith("image/"):
+    # Accept image files (including video frames sent as JPEG)
+    content_type = file.content_type or ""
+    if not content_type.startswith("image/"):
         return {"error": "File must be an image"}
 
     img_bytes = await file.read()
